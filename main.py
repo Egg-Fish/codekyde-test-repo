@@ -5,9 +5,7 @@ from flask import Flask, render_template, request, send_file
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "sussybaka"
 
-
-
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
         return render_template("index.html")
@@ -20,5 +18,9 @@ def index():
         triangle_result = triangle(a, b, c)
 
         print(quadratic_result, triangle_result)
+        return render_template("result.html", quadratic_result=quadratic_result, triangle_result=triangle_result)
+
+if __name__ == '__main__':
+    app.run(host='localhost', port=80)
 
     
