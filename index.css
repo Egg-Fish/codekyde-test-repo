@@ -1,0 +1,79 @@
+html{
+  background-color: #222222;
+}
+
+.word{
+  line-height: 60%;
+  padding-top: 60px;
+}
+
+.sign-up{
+  color:white;
+  margin: 0 auto;
+  width:290px;
+  font-size: 20px;
+  color: grey;
+  size: 323px;
+  line-height: 31px;
+  padding-top: 20px;
+}
+
+.sign-up input[type=number]{
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  color: red;
+  font-size: 16px;
+  width: 130px;
+  margin: 0 auto;
+}
+
+.sign-up-2{
+  line-height: 40px;
+}
+
+#hello{
+ display:block;
+ width: 140px;
+ height: 40px;
+ color: white;
+ background-color: red;
+ border: none;
+}
+
+#hello:hover{
+ background-color: #f08080;
+}
+
+
+h1, p{
+  font-weight: bold;
+  font-family: Helvetica,sans-serif;
+  text-align: center;
+  color: white;
+}
+
+p{
+  font-size: 18px;
+}
+
+h1{
+  font-size: 70px;
+}
+
+a{
+  text-decoration: none;
+  color: red;
+}
+
+a:hover, a:active{
+  color: #f08080;
+  text-decoration: underline;
+}
+
+img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  float:right;
+}
