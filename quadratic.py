@@ -11,3 +11,7 @@ def quadratic():
     else:
         roots.append(r2)
     return (roots)
+
+if __name__ == '__main__':
+    # put tests here and run this file
+    print(quadratic(1, 2, 3)) # idk what this returns
