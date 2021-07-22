@@ -1,5 +1,6 @@
-html{
+html body{
   background-color: #222222;
+  height: 100%;
 }
 
 .word{
