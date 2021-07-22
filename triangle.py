@@ -9,3 +9,4 @@ def triangle(a,b,c):
 if __name__ == '__main__':
     # put tests here and run this file
     print(triangle(12, 13, 5)) # should return 30
+    print(triangle(4,5,4))
