@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="assets/css/form-result.css" />
+  <script>
+  function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+window.onload = function() {
+    var a = (getParameterByName("test"));
+    var b = (getParameterByName("value1"));
+    var c = (getParameterByName("value2"));
+    document.write("The equation is ",a," x^2 + ",b,"x + ",c)
+}
+</script>
+</head>
+<body>
+  <div class="word">
+   <p id="username"></p>
+   <p id="password"></p>
+</body>
+</html>
